@@ -67,12 +67,16 @@ Global liderlik tablosu verilerini saklar.
 1. Repo klonlama:
 ```bash
 git clone https://github.com/burcingungorr/tensecondschallenge.git
-cd ten-seconds-challenge 
+cd ten-seconds-challenge
+```
 
 2. Paketleri yükleme:
+```bash
 npx expo install
+```
 
 3. Projeyi çalıştırma:
+ ```bash
 npx expo start
 ```
 
@@ -80,6 +84,8 @@ npx expo start
 ---
 
 ## 🗂 Dosya Yapısı
+```
+
 ten-seconds-challenge/
 │
 ├─ .env.example
@@ -87,81 +93,71 @@ ten-seconds-challenge/
 ├─ package.json
 ├─ App.json
 │
-├─  app/
-│    ├─ (tabs)/
-│         ├─ _layout.tsx
-│         ├─ history.tsx
-│         ├─ index.tsx
-│         ├─ leaderboard.tsx
-│         └─ profile.tsx
-│    ├─ _layput.tsx
-│    ├─ auth.tsx
-│    ├─ not-found.tsx
-│    ├─ splash.tsx
-│    └─ loading.tsx
+├─ app/
+│   ├─ (tabs)/
+│   │    ├─ _layout.tsx
+│   │    ├─ history.tsx
+│   │    ├─ index.tsx
+│   │    ├─ leaderboard.tsx
+│   │    └─ profile.tsx
+│   ├─ _layout.tsx
+│   ├─ auth.tsx
+│   ├─ not-found.tsx
+│   ├─ splash.tsx
+│   └─ loading.tsx
 │
-├─  components/
-│    ├─ AuthScreen/
-│         ├─ LoginForm.tsx
-│         └─ RegisterForm.tsx
+├─ components/
+│   ├─ AuthScreen/
+│   │    ├─ LoginForm.tsx
+│   │    └─ RegisterForm.tsx
+│   │
+│   ├─ HistoryScreen/
+│   │    ├─ Histories.tsx
+│   │    └─ HistoryCard.tsx
+│   │
+│   ├─ HomeScreen/
+│   │    ├─ Header.tsx
+│   │    ├─ Result.tsx
+│   │    ├─ StartStopButton.tsx
+│   │    └─ TimerDisplay.tsx
+│   │
+│   ├─ ProfileScreen/
+│   │    ├─ AvatarPicker.tsx
+│   │    ├─ EditProfileModal.tsx
+│   │    ├─ LogOutButton.tsx
+│   │    └─ ProfileInfo.tsx
+│   │
+│   ├─ LeaderScreen/
+│   │    ├─ LeaderCard.tsx
+│   │    └─ Leaders.tsx
+│   │
+│   └─ Header.tsx
 │
-│    ├─ HistoryScreen/
-│         ├─ Histories.tsx
-│         └─ HistoryCard.tsx
-│ 
-│    ├─ HomeScreen/
-│         ├─ Header.tsx
-│         ├─ Result.tsx
-│         ├─ StartStopButton.tsx
-│         └─ TimerDisplay.tsx
-│       
-│    ├─ ProfileScreen/
-│         ├─ AvatarPicker.tsx
-│         ├─ EditProfileModal.tsx
-│         ├─ LogOutButton.tsx
-│         └─  ProfileInfo.tsx
+├─ redux/
+│   ├─ store.ts
+│   └─ userSlice.ts
 │
-│    ├─  LeaderScreen/
-│         ├─ LeaderCard.tsx
-│         └─ Leaders.tsx
+├─ constants/
+│   └─ theme.ts
 │
-│    └─ Header.tsx
-│  
-│ 
-├─  redux/
-│     ├─ store.ts
-│     └─ userSlice.ts
+├─ hooks/
+│   ├─ useTimer.ts
+│   └─ useResponsive.ts
 │
-├─  constansts/
-│     └─ theme.ts
-│  
-├─  hooks/
-│    ├─ useTimer.ts
-│    └─ useResponsive.ts
-│  
-├─  firebaseConfig.js
+├─ firebaseConfig.js
 │
-└─  assets/
+└─ assets/
     ├─ images/
     ├─ avatars/
     └─ animations/
-
+```
 ## Uygulama Görselleri
 
-<table>
-  <tr>
-    <td><img width="180" src="https://github.com/user-attachments/assets/4522e6f4-2900-408a-8e0b-6ce921ba8be5" /></td>
-    <td><img width="180" src="https://github.com/user-attachments/assets/9f6f88a3-cb00-490b-91c7-482a7a2fe776" /></td>
-    <td><img width="180" src="https://github.com/user-attachments/assets/9620a14c-621a-4b6d-b739-abff9969db7a" /></td>
-    <td><img width="180" src="https://github.com/user-attachments/assets/c75172e7-ebea-4360-afdc-7f737fccc314" /></td>
-  </tr>
-  <tr>
-    <td><img width="180" src="https://github.com/user-attachments/assets/12fe1b44-f3ee-4138-9d63-8fb6ba05df26" /></td>
-    <td><img width="180" src="https://github.com/user-attachments/assets/e077bebc-02c9-4ff5-bc77-a8e0bf4430e7" /></td>
-    <td><img width="180" src="https://github.com/user-attachments/assets/7f1829f2-1029-46cc-a88a-ffb772d1b249" /></td>
-    <td></td>
-  </tr>
-</table>
+| | | | |
+|--|--|--|--|
+| <img width="320" src="https://github.com/user-attachments/assets/fd285d44-5e4e-48d7-87b5-289487a6991d" /> | <img width="320" src="https://github.com/user-attachments/assets/ed71d2e6-7fde-4c7f-9b35-aeaf822e4570" /> | <img width="320" src="https://github.com/user-attachments/assets/5228bbb5-d373-480a-9c1a-ae691a7a4bfa" /> | <img width="320" src="https://github.com/user-attachments/assets/aa0199ef-f48e-4330-9a61-7bd74a8979ba" /> |
+| <img width="320" src="https://github.com/user-attachments/assets/af0a6b6f-b164-4a42-b6b8-1a1b6bc4a454" /> | <img width="320" src="https://github.com/user-attachments/assets/18707480-a0a9-4656-ba58-5142ceced92f" /> | <img width="320" src="https://github.com/user-attachments/assets/3b7e7408-6e41-4f30-82a8-2f9ed9507e35" /> | |
+
 
 
 
