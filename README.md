@@ -1,4 +1,4 @@
-# 10.00 Challenge – Firebase Entegrasyonlu Mobil Uygulama
+# 10.00 Challenge – Mobil Uygulama
 
 **Amaç:** Kullanıcıların bir sayacı tam 10.00 saniyede durdurmaya çalıştığı ölçülebilir bir oyun. Firebase ile kullanıcı kimlik doğrulama, geçmiş denemeler ve canlı leaderboard içerir.
 
